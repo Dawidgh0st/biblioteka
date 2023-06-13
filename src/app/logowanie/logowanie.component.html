@@ -1,0 +1,34 @@
+<pre>
+    {{logowanie.value | json}}
+</pre>
+
+<form [formGroup]="logowanie" class="logowanie"  method="get" action="naszserwer">
+
+<div>
+    <div class="et">
+        <label for="getEmail">login</label>
+    </div>
+    <div class="log">
+        <input id="getEmail" formControlName="getEmail" name="getEmail" type="text">
+    </div>
+</div>
+<div>
+    <div class="et">
+        <label for="getPassword">hasło</label>
+    </div>
+    <div class="log">
+        <input id="getPassword" formControlName="getPassword" name="getPassword" type="password">
+    </div>
+</div>
+<div>
+    <div class="et">
+
+    </div>
+    <div>
+        <input type="submit" value="zaloguj się">
+    </div>
+</div>
+</form>
+<div class="przerzut">
+    Jeżeli nie jesteś jeszcze zarejestrowany, możesz dokonać tego <a href="http://localhost:4200/rejestracja"> tutaj </a>
+</div>
