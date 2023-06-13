@@ -1,0 +1,57 @@
+<pre>
+    {{forma.value | json}}
+</pre>
+
+<form [formGroup]="forma" class="rejestracja" method="post" action="naszserwer">
+
+    <div>
+        <div class="et">
+            <label for="imieInazwisko">Imię i nazwisko</label>
+        </div>
+        <div class="pobieranie">
+            <input id="imieInazwisko" formControlName="imieInazwisko" name="imieInazwisko" type="text">
+        </div>
+    </div>
+    <div>
+        <div class="et">
+            <label for="email"> e-mail</label>
+        </div>
+        <div class="pobieranie">
+            <input id="email" formControlName="email" name="email" type="text">
+        </div>
+    </div>
+    <div>
+        <div class="et">
+            <label for="password">hasło</label>
+        </div>
+        <div class="pobieranie">
+            <input id="password" formControlName="password" name="password" type="password">
+        </div>
+    </div>
+    <div>
+        <div class="et">
+            <label for="confirmPassword">Potwierdź hasło</label>
+        </div>
+        <div class="pobieranie">
+            <input id="confirmPassword" formControlName="confirmPassword" type="password">
+        </div>
+    </div>
+    <div>
+        <div class="et">
+
+        </div>
+        <div>
+            <input type="submit" value="Zatwierdź">
+        </div>
+    </div>
+    <div>
+        <div class="et">
+
+        </div>
+        <div>
+            <input (click)="anuluj()" type="button" value="Anuluj">
+        </div>
+    </div>
+
+
+</form>
