@@ -3,6 +3,37 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(199, 205, 123)
+.gridglowny {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 200px auto 100px;
+}
+
+.lewa {
+    background-color: yellow;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.srodek {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: whitesmoke;
+}
+.prawa {
+    background-color: green;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.gora {
+    background-color: rgb(219, 216, 216);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.dol {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: bisque;
+    gap: 10px;
 }

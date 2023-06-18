@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DaneService } from './dane.service';
+import { BibliotekaService } from './biblioteka.service';
 
-describe('DaneService', () => {
-  let service: DaneService;
+describe('BibliotekaService', () => {
+  let service: BibliotekaService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(DaneService);
+    service = TestBed.inject(BibliotekaService);
   });
 
   it('should be created', () => {

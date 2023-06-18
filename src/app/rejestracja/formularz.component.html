@@ -1,7 +1,11 @@
+<!--
 <pre>
     {{forma.value | json}}
 </pre>
+-->
 
+
+<div class="srodek">
 <form [formGroup]="forma" class="rejestracja" method="post" action="naszserwer">
 
     <div>
@@ -41,7 +45,7 @@
 
         </div>
         <div>
-            <input type="submit" value="Zatwierdź">
+            <input (click)="zarejestrujSie()" type="submit" value="Zarejestruj się">
         </div>
     </div>
     <div>
@@ -52,6 +56,5 @@
             <input (click)="anuluj()" type="button" value="Anuluj">
         </div>
     </div>
-
-
 </form>
+</div>

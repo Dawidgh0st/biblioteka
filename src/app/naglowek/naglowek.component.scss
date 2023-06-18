@@ -1,6 +1,12 @@
 h1{
     color: black;
 }
+.logo{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    margin-top: 20px;
+}
 
 nav {
  margin: 16px;
@@ -10,5 +16,6 @@ nav button {
     padding: 5px;
     margin: 5px;
     color: white;
-    background-color: red;
+    background-color: rgb(93, 110, 219);
+    
 }

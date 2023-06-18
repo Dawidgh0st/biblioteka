@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { StopkaComponent } from './stopka/stopka.component';
 import { NaglowekComponent } from './naglowek/naglowek.component';
 import { FormularzComponent } from './rejestracja/formularz.component';
-import { KontaktComponent } from './kontakt/kontakt.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LogowanieComponent } from './logowanie/logowanie.component';
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import { UserComponent } from './user/user.component';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,17 @@ import { LogowanieComponent } from './logowanie/logowanie.component';
     StopkaComponent,
     NaglowekComponent,
     FormularzComponent,
-    KontaktComponent,
-    LogowanieComponent
+    LogowanieComponent,
+    UserComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
+  exports: [FormularzComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
