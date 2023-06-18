@@ -4,6 +4,7 @@ import { FormularzComponent } from './rejestracja/formularz.component';
 import { LogowanieComponent } from './logowanie/logowanie.component';
 import { StopkaComponent } from './stopka/stopka.component';
 import { LibraryComponent } from './library/library.component';
+import { SearchComponent } from './search/search.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
 { path: "rejestracja", component: FormularzComponent},
 { path: "logowanie", component: LogowanieComponent},
 { path: "stopka", component: StopkaComponent},
+{ path: "search", component: SearchComponent}
 
 
 ];
