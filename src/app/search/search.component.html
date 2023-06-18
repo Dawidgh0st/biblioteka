@@ -1,0 +1,43 @@
+<div class="srodek">
+    <form [formGroup]="searchForma" class="search" method="get" action="naszserwer">
+        <div>
+            <div class="et">
+                <label for="tytul">Wyszukiwanie po tytule</label>
+            </div>
+            <div class="wyszukiwanie">
+                <input id="tytul" formControlName="tytul" name="tytul" type="text" placeholder="wpisz tytuł" [(ngModel)]="tytul" (ngModelChange)="tytul = $event">
+            </div>
+        </div>
+        <div>
+            <div class="et">
+                <label for="autor">Wyszukiwanie po autorze</label>
+            </div>
+            <div class="wyszukiwanie">
+                <input id="autor" formControlName="autor" name="autor" type="text" placeholder="wpisz nazwisko autora" [(ngModel)]="autor" (ngModelChange)="autor = $event">
+            </div>
+        </div>
+        <div>
+            <div class="et">
+                <label for="gatunek">Wyszukiwanie wg gatunku</label>
+            </div>
+            <div class="wyszukiwanie">
+            <select id="gatunek" formControlName="gatunek" name="gatunek">
+                <option value="0">fantastyka</option>
+                <option value="1">finanse</option>
+                <option value="2">historia</option>
+                <option value="3">horror</option>
+                <option value="4">klasyka</option>
+                <option value="5">kryminał</option>
+                <option value="6">podróże</option>
+                <option value="7">popularnonaukowe</option>
+                <option value="8">reportaż</option>
+            </select>
+        </div>
+        </div>
+        <div>
+            <div>
+                <input type="submit" value="Wyszukaj">
+            </div>
+        </div>
+    </form>
+</div>

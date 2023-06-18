@@ -11,6 +11,8 @@ import { LogowanieComponent } from './logowanie/logowanie.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { UserComponent } from './user/user.component';
 import { LibraryComponent } from './library/library.component';
+import { SearchComponent } from './search/search.component';
+
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { LibraryComponent } from './library/library.component';
     FormularzComponent,
     LogowanieComponent,
     UserComponent,
-    LibraryComponent
+    LibraryComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule, 
   ],
   exports: [FormularzComponent],
   providers: [],
