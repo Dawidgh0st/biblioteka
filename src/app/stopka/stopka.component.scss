@@ -1,3 +1,20 @@
-h1 {
-    color: blueviolet
+* {
+    box-sizing: border-box;
 }
+
+
+.stopka {
+    padding: 20px;
+    margin: auto;
+    a{
+        display: inline-block;
+        padding: 20px;
+        margin-right: 150px;
+        margin-left: 150px;
+        color: black;
+        font-size: 15pt;
+
+    }
+}
+
+

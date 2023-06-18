@@ -1,6 +1,7 @@
-<h1>Witaj na stronie biblioteki</h1>
 
-<nav>
+
+<nav class="gora">
+<img src="assets/logo.png" alt="logo" class="logo" (click)="przekierowanieNaGlowna()" [routerLink]="['/library']">
 <button [routerLink]="['/rejestracja']">rejestracja</button>
 <button [routerLink]="['/logowanie']">logowanie</button>
 </nav>
