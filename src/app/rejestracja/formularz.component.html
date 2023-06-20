@@ -6,7 +6,7 @@
 
 
 <div class="srodek">
-<form [formGroup]="forma" class="rejestracja" method="post" action="naszserwer">
+<form [formGroup]="forma" class="rejestracja" method="post" action="http://localhost:8080/registration">
 
     <div>
         <div class="et">
@@ -21,7 +21,7 @@
             <label for="email"> e-mail</label>
         </div>
         <div class="pobieranie">
-            <input id="email" formControlName="email" name="email" type="text">
+            <input id="email" formControlName="email" name="email" type="email">
         </div>
     </div>
     <div>

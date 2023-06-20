@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { UrlSerializer } from '@angular/router';
 import { Observable } from 'rxjs';
+import { UserComponent } from './user/user.component';
+
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +13,8 @@ export class BibliotekaService {
 
   constructor(private http: HttpClient) { }
 
-  createUser(user: any): Observable<any>{
-    return this.http.post<any>(`${this.url}`, user);
+  registerUser(user: UserComponent) {
+    return this.http.post(this.url, user);
   }
  
   

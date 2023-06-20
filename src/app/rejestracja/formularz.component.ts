@@ -18,22 +18,20 @@ export class FormularzComponent {
     password: new FormControl(null, { validators: [], updateOn: "change" }),
     confirmPassword: new FormControl(null, { validators: [], updateOn: "change" })
   });
-  username: any;
-  email: any;
-  password: any;
+  username: string ='';
+  email: string = '';
+  password: string = '';
   
 
   public zarejestrujSie() {
-    let user: any = {
+     const user = {
       username: this.username,
       email: this.email,
       password: this.password
-    };
+    }
     console.log(user);
-    this.bibliotekaService.createUser(user).subscribe(x => 
-      {this.router.navigate(['/','user'])})
-
-
+    this.bibliotekaService.registerUser(user).subscribe(x => 
+      {this.router.navigate(['/user'])})
   }
 
   public anuluj(): void {
