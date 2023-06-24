@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { EmailValidator, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { BibliotekaService } from '../biblioteka.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-formularz',
@@ -10,7 +10,7 @@ import { BibliotekaService } from '../biblioteka.service';
 })
 export class FormularzComponent {
 
-  constructor(private router: Router, private bibliotekaService: BibliotekaService){}
+  constructor(private router: Router, private userService: UserService){}
 
   public forma = new FormGroup({
     imieInazwisko: new FormControl(null, { validators: [], updateOn: "change" }),
@@ -30,7 +30,7 @@ export class FormularzComponent {
       password: this.password
     }
     console.log(user);
-    this.bibliotekaService.registerUser(user).subscribe(x => 
+    this.userService.registerUser(user).subscribe(x => 
       {this.router.navigate(['/user'])})
   }
 
