@@ -12,6 +12,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { UserComponent } from './user/user.component';
 import { LibraryComponent } from './library/library.component';
 import { SearchComponent } from './search/search.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SearchComponent } from './search/search.component';
     LogowanieComponent,
     UserComponent,
     LibraryComponent,
-    SearchComponent
+    SearchComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
