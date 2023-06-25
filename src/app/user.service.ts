@@ -7,11 +7,19 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class UserService {
-  private url = 'http://localhost:8080/register';
+  private url = 'http://localhost:8080/registration';
+  private urlLog = 'http://localhost:8080/logowanie';
+
 
   constructor(private http: HttpClient) { }
 
-  registerUser(user: User): Observable<User> {
+  public registerUser(user: User): Observable<User> {
     return this.http.post<User>(this.url, user);
   }
+
+     public login(daneUzytkownika: any): Observable<any>{
+      return this.http.post(this.urlLog, daneUzytkownika)
+    }
+
+
 }

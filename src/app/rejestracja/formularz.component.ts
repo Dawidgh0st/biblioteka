@@ -31,7 +31,7 @@ export class FormularzComponent {
     }
     console.log(user);
     this.userService.registerUser(user).subscribe(x => 
-      {this.router.navigate(['/user'])})
+      {this.router.navigate(['/logowanie'])})
   }
 
   public anuluj(): void {
